@@ -117,7 +117,7 @@ function media(PageDoc, Type, aTag) {
         for(let x = 0; x != amount; x++) {
             const Link = PageDoc.querySelectorAll('a.'+aTag)[x];
             if (Link) {
-                const URL = `https://c2.coomer.party${Link.getAttribute('href')}`;
+                const URL = `${Link.getAttribute('href')}`;
                 const Element = document.createElement(Type);
                 Element.src = URL;
                 if(Type == 'video') {
